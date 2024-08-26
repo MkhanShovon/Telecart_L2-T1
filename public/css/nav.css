@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "roboto", sans-serif;
+}
+
+.search-bar {
+  padding-left: 5%;
+}
+.options {
+  padding-left: 7%;
+}
+.search {
+  width: 500px;
+}
+.nav {
+    position: fixed;
+}
+.category{
+  position: relative;
+  background-color: #212529;
+  padding: 15px;
+}
+.category p{
+  margin: 0;
+}
+.category-item{
+  margin-left: 10px;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;  /* Align items vertically */
+}
+
+.nav-item a{
+  cursor: pointer;
+  position: relative;
+}
+
+.login-logout-popup{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  background: #fff;
+  border-radius: 10px;
+  top: 40px;
+  width: 200px;
+  transition: .5s;
+  border: 2px solid #f5f5f5;
+  color: #212529;
+}
+.login-logout-popup::after{
+  content: '';
+  position: absolute;
+  top: -7.5px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  border-radius: 5px;
+
+}
+
+.account-info{
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+.hide{
+  opacity: 0;
+  pointer-events: none;
+}
+
+/*
+.seller-dashboard-brand {
+  padding-right: 18%;
+  margin-right: 20px; 
+}
+*/
+
+.seller-dashboard-btn {
+  background-color: #28a745; /* Your preferred color */
+  border-color: #218838; /* Darker shade for border */
+  color: #fff; /* Text color */
+}
